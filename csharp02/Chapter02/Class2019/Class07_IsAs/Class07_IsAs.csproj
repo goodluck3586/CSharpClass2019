@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{EEE22428-A038-4CE3-B28A-09108033C913}</ProjectGuid>
+    <ProjectGuid>{747D9685-B7A8-4984-A047-A3539657BBDF}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Class04_ThisConstructor</RootNamespace>
-    <AssemblyName>Class04_ThisConstructor</AssemblyName>
+    <RootNamespace>Class07_IsAs</RootNamespace>
+    <AssemblyName>Class07_IsAs</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,8 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
-    <Compile Include="Class2.cs" />
+    <Compile Include="Mammal.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

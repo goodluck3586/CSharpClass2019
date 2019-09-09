@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{EEE22428-A038-4CE3-B28A-09108033C913}</ProjectGuid>
+    <ProjectGuid>{97DCB886-C477-4C7B-B55D-006D114742AC}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Class04_ThisConstructor</RootNamespace>
-    <AssemblyName>Class04_ThisConstructor</AssemblyName>
+    <RootNamespace>Class06_Inheritance</RootNamespace>
+    <AssemblyName>Class06_Inheritance</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,8 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
-    <Compile Include="Class2.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
