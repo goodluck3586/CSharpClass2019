@@ -23,7 +23,6 @@ namespace Class02_Static
 
             // 정적 메소드 사용
             Console.WriteLine($"생성된 객체 숫자: {Actor.GetCount()}");
-            
 
         }
     }
