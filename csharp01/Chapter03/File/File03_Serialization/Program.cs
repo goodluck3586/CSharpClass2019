@@ -48,7 +48,6 @@ namespace File03_Serialization
             ms.Read(outBytes, 0, 4);
             int intResult = BitConverter.ToInt32(outBytes, 0);
             Console.WriteLine(intResult);
-
         }
     }
 }
