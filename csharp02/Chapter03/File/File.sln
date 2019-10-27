@@ -11,6 +11,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "File03_Serialization", "Fil
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "File04_Serialization", "File04_Serialization\File04_Serialization.csproj", "{33F5FA7B-5FD6-472A-9FE0-83701AB88520}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "File05_Using", "File05_Using\File05_Using.csproj", "{79B96CA9-1F8F-400D-8907-C04E1EE57D8E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "File06_Serialization", "File06_Serialization\File06_Serialization.csproj", "{453C3871-E0DA-48EE-AF63-9227D23507E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "File07_SerializationCollection", "File07_SerializationCollection\File07_SerializationCollection.csproj", "{798DADD6-79EF-454A-A28E-202815F77371}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +39,18 @@ Global
 		{33F5FA7B-5FD6-472A-9FE0-83701AB88520}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{33F5FA7B-5FD6-472A-9FE0-83701AB88520}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{33F5FA7B-5FD6-472A-9FE0-83701AB88520}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79B96CA9-1F8F-400D-8907-C04E1EE57D8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79B96CA9-1F8F-400D-8907-C04E1EE57D8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79B96CA9-1F8F-400D-8907-C04E1EE57D8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79B96CA9-1F8F-400D-8907-C04E1EE57D8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{453C3871-E0DA-48EE-AF63-9227D23507E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{453C3871-E0DA-48EE-AF63-9227D23507E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{453C3871-E0DA-48EE-AF63-9227D23507E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{453C3871-E0DA-48EE-AF63-9227D23507E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{798DADD6-79EF-454A-A28E-202815F77371}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{798DADD6-79EF-454A-A28E-202815F77371}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{798DADD6-79EF-454A-A28E-202815F77371}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{798DADD6-79EF-454A-A28E-202815F77371}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
