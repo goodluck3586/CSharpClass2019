@@ -25,7 +25,7 @@ namespace Task03_PrimeNumber
         {
             // 소수를 판별할 범위
             long startNum=2, endNum=100000; // 1~2500, 2501~5000, 5001~7500, 7501~10000
-            int taskCount = 6;  // Task 숫자
+            int taskCount = 8;  // Task 숫자
 
             // 넘겨받은 범위의 숫자에서 소수를 찾아 found 리스트에 담아 반환하는 함수
             Func<object, List<long>> FindPrimeFunc = (objRange) =>

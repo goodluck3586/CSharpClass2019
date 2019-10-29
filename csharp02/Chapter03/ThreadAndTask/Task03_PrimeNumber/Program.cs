@@ -12,8 +12,8 @@ namespace Task03_PrimeNumber
         static void Main(string[] args)
         {
             // 소수를 판별 숫자 범위
-            long startNum = 2, endNum = 10000;
-            int taskCount = 8;
+            long startNum = 2, endNum = 100000;
+            int taskCount = 4;
 
             // 각각의 Task가 수행할 메소드 준비
             Func<object, List<long>> FindPrimeFunc = (objRange) => {
@@ -64,7 +64,7 @@ namespace Task03_PrimeNumber
                 totalPrimeNumberList.AddRange(task.Result);
             }
             DateTime endTime = DateTime.Now;
-            TimeSpan elapsed = endTime - startTime;
+            TimeSpan elapsed = endTime - startTime;  // 날짜 사이의 경과된 시간 저장
             Console.WriteLine($"소수 개수: {totalPrimeNumberList.Count}");
             Console.WriteLine($"실행 시간: {elapsed}");
         }

@@ -27,16 +27,16 @@ namespace Task05_AsyncAwait
 
         async private static void MyMethodAsync(int count)
         {
+            Thread.Sleep(1000);
             Console.WriteLine("C");
             Console.WriteLine("D");
 
-            await Task.Run(async () =>
+            await Task.Run(() =>
             {
                 for (int i = 1; i < count; i++)
                 {
                     //Thread.Sleep(1000);
                     Console.WriteLine($"{i}/{count}");
-                    await Task.Delay(1000);
                 }
             });
 

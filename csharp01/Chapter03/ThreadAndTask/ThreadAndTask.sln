@@ -23,6 +23,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task04_Parallel", "Task04_P
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task05_AsyncAwait", "Task05_AsyncAwait\Task05_AsyncAwait.csproj", "{64208361-F384-437D-B29F-43A34C98F9B3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task06_MakeBreakfast01_Sync", "Task06_MakeBreakfast01_Sync\Task06_MakeBreakfast01_Sync.csproj", "{36BB5AA5-286C-4A9A-9C05-F6B5A3488070}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task07_Breakfast02_Async", "Task07_Breakfast02_Async\Task07_Breakfast02_Async.csproj", "{65925CDB-08A0-4A4B-ABEC-2DC90177FE00}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +73,14 @@ Global
 		{64208361-F384-437D-B29F-43A34C98F9B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{64208361-F384-437D-B29F-43A34C98F9B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{64208361-F384-437D-B29F-43A34C98F9B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36BB5AA5-286C-4A9A-9C05-F6B5A3488070}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36BB5AA5-286C-4A9A-9C05-F6B5A3488070}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36BB5AA5-286C-4A9A-9C05-F6B5A3488070}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36BB5AA5-286C-4A9A-9C05-F6B5A3488070}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65925CDB-08A0-4A4B-ABEC-2DC90177FE00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65925CDB-08A0-4A4B-ABEC-2DC90177FE00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65925CDB-08A0-4A4B-ABEC-2DC90177FE00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65925CDB-08A0-4A4B-ABEC-2DC90177FE00}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
