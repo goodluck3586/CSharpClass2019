@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mook_FileCM", "mook_FileCM\mook_FileCM.csproj", "{7F5215B7-9616-4D4F-94E2-479687BCFF1C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7F5215B7-9616-4D4F-94E2-479687BCFF1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F5215B7-9616-4D4F-94E2-479687BCFF1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F5215B7-9616-4D4F-94E2-479687BCFF1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F5215B7-9616-4D4F-94E2-479687BCFF1C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {25037C6A-8E78-482D-B036-D0DF2A8CE110}
+	EndGlobalSection
+EndGlobal

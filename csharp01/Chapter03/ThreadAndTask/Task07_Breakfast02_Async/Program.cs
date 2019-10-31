@@ -30,8 +30,7 @@ namespace Task07_Breakfast02_Async
 
             Task<Egg> fryEggsTask = FryEggs(2);
             var fryBaconTask = FryBacon(3);
-            var toastBreadTask = ToastBread(2);
-            
+            var toastBreadTask = MakeToastWithButterAndJamAsync(2);
             
             Juice oj = PourOJ();
             Console.WriteLine("oj is ready");
@@ -42,18 +41,40 @@ namespace Task07_Breakfast02_Async
             Console.WriteLine("bacon is ready");
             toastBreadTask.Wait();
             Console.WriteLine("toast is ready");
-
+            
             Console.WriteLine("Breakfast is ready!");
             DateTime endTime = DateTime.Now;
             TimeSpan elapsed = endTime - startTime;  // 두 날짜 사이의 시간 간격 저장
             Console.WriteLine($"실행 시간: {elapsed}");
         }
 
+        async static Task<Toast> MakeToastWithButterAndJamAsync(int number)
+        {
+            var toast = await ToastBreadAsync(number);
+            ApplyButter(toast);
+            ApplyJam(toast);
+            return toast;
+        }
+
+        async static Task<Toast> ToastBreadAsync(int number)
+        {
+            Console.WriteLine("토스트빵 준비");
+
+            await Task.Run(() => {
+                for (int i = 0; i < number; i++)
+                {
+                    Console.WriteLine($"토스트 빵 굽기 {i}");
+                    Thread.Sleep(1000);
+                }
+            });
+            return new Toast();
+        }
+
         async private static Task<Egg> FryEggs(int count)
         {
             Console.WriteLine("계란 준비");
 
-            await Task.Run(()=> {
+            await Task.Run(() => {
                 for (int i = 0; i < count; i++)
                 {
                     Console.WriteLine($"계란 후라이 만들기 {i}");
@@ -96,25 +117,6 @@ namespace Task07_Breakfast02_Async
         {
             Console.WriteLine("빵에 버터를 바른다.");
             Thread.Sleep(1000);
-        }
-
-        async private static Task<Toast> ToastBread(int count)
-        {
-            Console.WriteLine("토스트 준비");
-            Toast toast = new Toast();
-
-            await Task.Run(()=> {
-                for (int i = 0; i < count; i++)
-                {
-                    Console.WriteLine($"토스트 빵 굽기 {i}");
-                    Thread.Sleep(1000);
-                }
-            });
-
-            ApplyButter(toast);
-            ApplyJam(toast);
-
-            return toast;
         }
     }
 }

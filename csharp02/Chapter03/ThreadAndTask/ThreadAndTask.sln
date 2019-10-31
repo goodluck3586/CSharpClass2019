@@ -27,6 +27,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task06_MakeBreakfast_Sync",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task07_MakeBreakfast_Async", "Task07_MakeBreakfast_Async\Task07_MakeBreakfast_Async.csproj", "{08589D13-DD04-40C1-861A-E9A9E032E2D0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task08_MakeBreakfast_Async", "Task08_MakeBreakfast_Async\Task08_MakeBreakfast_Async.csproj", "{4BF808BB-D2E8-4912-A7DF-7B59186D4516}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task09_AsyncAPI", "Task09_AsyncAPI\Task09_AsyncAPI.csproj", "{B93ABF88-3CE4-4424-A4A0-382C247EDF4C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +85,14 @@ Global
 		{08589D13-DD04-40C1-861A-E9A9E032E2D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{08589D13-DD04-40C1-861A-E9A9E032E2D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{08589D13-DD04-40C1-861A-E9A9E032E2D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BF808BB-D2E8-4912-A7DF-7B59186D4516}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BF808BB-D2E8-4912-A7DF-7B59186D4516}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BF808BB-D2E8-4912-A7DF-7B59186D4516}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BF808BB-D2E8-4912-A7DF-7B59186D4516}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B93ABF88-3CE4-4424-A4A0-382C247EDF4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B93ABF88-3CE4-4424-A4A0-382C247EDF4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B93ABF88-3CE4-4424-A4A0-382C247EDF4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B93ABF88-3CE4-4424-A4A0-382C247EDF4C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mook_ListBox", "mook_ListBox\mook_ListBox.csproj", "{5ED6D27C-EDDD-48C1-B695-29D51D2422E8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5ED6D27C-EDDD-48C1-B695-29D51D2422E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5ED6D27C-EDDD-48C1-B695-29D51D2422E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5ED6D27C-EDDD-48C1-B695-29D51D2422E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5ED6D27C-EDDD-48C1-B695-29D51D2422E8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {343E1DD8-D57E-459A-B276-5BBC4CCAF6B1}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mook_WebDownLoader", "mook_WebDownLoader\mook_WebDownLoader.csproj", "{FFE1592E-3A10-4AC5-A547-C2B7B6D9EBEC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FFE1592E-3A10-4AC5-A547-C2B7B6D9EBEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFE1592E-3A10-4AC5-A547-C2B7B6D9EBEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFE1592E-3A10-4AC5-A547-C2B7B6D9EBEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFE1592E-3A10-4AC5-A547-C2B7B6D9EBEC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5FA4D9EC-F001-418C-A659-554FDEAD5F54}
+	EndGlobalSection
+EndGlobal
