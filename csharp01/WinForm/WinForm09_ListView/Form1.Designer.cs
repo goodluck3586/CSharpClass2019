@@ -58,12 +58,14 @@
             this.listView1.FullRowSelect = true;
             this.listView1.GridLines = true;
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(12, 10);
+            this.listView1.Location = new System.Drawing.Point(10, 8);
+            this.listView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(642, 290);
+            this.listView1.Size = new System.Drawing.Size(621, 179);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
+            this.listView1.Click += new System.EventHandler(this.listView1_Click);
             // 
             // chNum
             // 
@@ -102,56 +104,60 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(27, 323);
+            this.label1.Location = new System.Drawing.Point(65, 205);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(21, 19);
+            this.label1.Size = new System.Drawing.Size(14, 12);
             this.label1.TabIndex = 1;
             this.label1.Text = "C";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(78, 320);
+            this.textBox1.Location = new System.Drawing.Point(109, 203);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 25);
+            this.textBox1.Size = new System.Drawing.Size(88, 21);
             this.textBox1.TabIndex = 2;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(271, 320);
+            this.textBox2.Location = new System.Drawing.Point(278, 203);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 25);
+            this.textBox2.Size = new System.Drawing.Size(88, 21);
             this.textBox2.TabIndex = 4;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(220, 323);
+            this.label2.Location = new System.Drawing.Point(233, 205);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(41, 19);
+            this.label2.Size = new System.Drawing.Size(26, 12);
             this.label2.TabIndex = 3;
             this.label2.Text = "C++";
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(472, 320);
+            this.textBox3.Location = new System.Drawing.Point(454, 203);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 25);
+            this.textBox3.Size = new System.Drawing.Size(88, 21);
             this.textBox3.TabIndex = 6;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(421, 323);
+            this.label3.Location = new System.Drawing.Point(409, 205);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(31, 19);
+            this.label3.Size = new System.Drawing.Size(20, 12);
             this.label3.TabIndex = 5;
             this.label3.Text = "C#";
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(68, 371);
+            this.btnAdd.Location = new System.Drawing.Point(101, 244);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(110, 34);
+            this.btnAdd.Size = new System.Drawing.Size(96, 27);
             this.btnAdd.TabIndex = 7;
             this.btnAdd.Text = "입력";
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -159,27 +165,31 @@
             // 
             // btnModify
             // 
-            this.btnModify.Location = new System.Drawing.Point(249, 371);
+            this.btnModify.Location = new System.Drawing.Point(259, 244);
+            this.btnModify.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnModify.Name = "btnModify";
-            this.btnModify.Size = new System.Drawing.Size(110, 34);
+            this.btnModify.Size = new System.Drawing.Size(96, 27);
             this.btnModify.TabIndex = 8;
             this.btnModify.Text = "수정";
             this.btnModify.UseVisualStyleBackColor = true;
+            this.btnModify.Click += new System.EventHandler(this.btnModify_Click);
             // 
             // btnRemove
             // 
-            this.btnRemove.Location = new System.Drawing.Point(438, 371);
+            this.btnRemove.Location = new System.Drawing.Point(424, 244);
+            this.btnRemove.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnRemove.Name = "btnRemove";
-            this.btnRemove.Size = new System.Drawing.Size(110, 34);
+            this.btnRemove.Size = new System.Drawing.Size(96, 27);
             this.btnRemove.TabIndex = 9;
             this.btnRemove.Text = "삭제";
             this.btnRemove.UseVisualStyleBackColor = true;
+            this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(680, 418);
+            this.ClientSize = new System.Drawing.Size(653, 281);
             this.Controls.Add(this.btnRemove);
             this.Controls.Add(this.btnModify);
             this.Controls.Add(this.btnAdd);
@@ -190,8 +200,10 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.listView1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
