@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{45D7EC3E-E186-4CE4-B07B-FCF20D9945C3}</ProjectGuid>
+    <ProjectGuid>{9E8C9535-856A-4149-966F-2987B10F97E2}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>WinForm12_Textbook</RootNamespace>
-    <AssemblyName>WinForm12_Textbook</AssemblyName>
+    <RootNamespace>WinForm11_FileDialog</RootNamespace>
+    <AssemblyName>WinForm11_FileDialog</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

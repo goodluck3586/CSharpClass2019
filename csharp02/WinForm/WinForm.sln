@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinForm11_DialogBox", "WinF
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinForm12_Textbook", "WinForm12_Textbook\WinForm12_Textbook.csproj", "{45D7EC3E-E186-4CE4-B07B-FCF20D9945C3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinForm13_FileDialog", "WinForm13_FileDialog\WinForm13_FileDialog.csproj", "{2899CC12-F60F-44B6-9E2A-BC53912D15B3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{45D7EC3E-E186-4CE4-B07B-FCF20D9945C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{45D7EC3E-E186-4CE4-B07B-FCF20D9945C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{45D7EC3E-E186-4CE4-B07B-FCF20D9945C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2899CC12-F60F-44B6-9E2A-BC53912D15B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2899CC12-F60F-44B6-9E2A-BC53912D15B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2899CC12-F60F-44B6-9E2A-BC53912D15B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2899CC12-F60F-44B6-9E2A-BC53912D15B3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

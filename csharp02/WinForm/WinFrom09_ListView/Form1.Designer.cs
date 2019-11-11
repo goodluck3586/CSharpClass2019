@@ -58,9 +58,10 @@
             this.listView1.FullRowSelect = true;
             this.listView1.GridLines = true;
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(17, 6);
+            this.listView1.Location = new System.Drawing.Point(15, 5);
+            this.listView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(696, 305);
+            this.listView1.Size = new System.Drawing.Size(610, 245);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -103,56 +104,60 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(26, 327);
+            this.label1.Location = new System.Drawing.Point(23, 262);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 19);
+            this.label1.Size = new System.Drawing.Size(42, 12);
             this.label1.TabIndex = 1;
             this.label1.Text = "C 언어";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(77, 324);
+            this.textBox1.Location = new System.Drawing.Point(67, 259);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 25);
+            this.textBox1.Size = new System.Drawing.Size(88, 21);
             this.textBox1.TabIndex = 2;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(295, 324);
+            this.textBox2.Location = new System.Drawing.Point(258, 259);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 25);
+            this.textBox2.Size = new System.Drawing.Size(88, 21);
             this.textBox2.TabIndex = 4;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(244, 327);
+            this.label2.Location = new System.Drawing.Point(214, 262);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(41, 19);
+            this.label2.Size = new System.Drawing.Size(26, 12);
             this.label2.TabIndex = 3;
             this.label2.Text = "C++";
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(509, 324);
+            this.textBox3.Location = new System.Drawing.Point(445, 259);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 25);
+            this.textBox3.Size = new System.Drawing.Size(88, 21);
             this.textBox3.TabIndex = 6;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(458, 327);
+            this.label3.Location = new System.Drawing.Point(401, 262);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(31, 19);
+            this.label3.Size = new System.Drawing.Size(20, 12);
             this.label3.TabIndex = 5;
             this.label3.Text = "C#";
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(44, 382);
+            this.btnAdd.Location = new System.Drawing.Point(38, 306);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(143, 36);
+            this.btnAdd.Size = new System.Drawing.Size(125, 29);
             this.btnAdd.TabIndex = 7;
             this.btnAdd.Text = "입력";
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -160,9 +165,10 @@
             // 
             // btnModify
             // 
-            this.btnModify.Location = new System.Drawing.Point(252, 382);
+            this.btnModify.Location = new System.Drawing.Point(220, 306);
+            this.btnModify.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnModify.Name = "btnModify";
-            this.btnModify.Size = new System.Drawing.Size(143, 36);
+            this.btnModify.Size = new System.Drawing.Size(125, 29);
             this.btnModify.TabIndex = 8;
             this.btnModify.Text = "수정";
             this.btnModify.UseVisualStyleBackColor = true;
@@ -170,9 +176,10 @@
             // 
             // btnRemove
             // 
-            this.btnRemove.Location = new System.Drawing.Point(466, 382);
+            this.btnRemove.Location = new System.Drawing.Point(408, 306);
+            this.btnRemove.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnRemove.Name = "btnRemove";
-            this.btnRemove.Size = new System.Drawing.Size(143, 36);
+            this.btnRemove.Size = new System.Drawing.Size(125, 29);
             this.btnRemove.TabIndex = 9;
             this.btnRemove.Text = "삭제";
             this.btnRemove.UseVisualStyleBackColor = true;
@@ -180,9 +187,9 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(725, 450);
+            this.ClientSize = new System.Drawing.Size(634, 360);
             this.Controls.Add(this.btnRemove);
             this.Controls.Add(this.btnModify);
             this.Controls.Add(this.btnAdd);
@@ -193,6 +200,7 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.listView1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);

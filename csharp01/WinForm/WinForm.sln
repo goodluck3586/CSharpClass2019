@@ -23,6 +23,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinForm08_MenuAndTap", "Win
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinForm09_ListView", "WinForm09_ListView\WinForm09_ListView.csproj", "{39EDFD09-8FD5-4812-94F9-97E5612DDD3C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinForm10_DialogBox", "WinForm10_DialogBox\WinForm10_DialogBox.csproj", "{09686750-DDF8-4B7B-AAE1-06C5BA1C4928}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinForm11_FileDialog", "WinForm11_FileDialog\WinForm11_FileDialog.csproj", "{9E8C9535-856A-4149-966F-2987B10F97E2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +73,14 @@ Global
 		{39EDFD09-8FD5-4812-94F9-97E5612DDD3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{39EDFD09-8FD5-4812-94F9-97E5612DDD3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{39EDFD09-8FD5-4812-94F9-97E5612DDD3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09686750-DDF8-4B7B-AAE1-06C5BA1C4928}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09686750-DDF8-4B7B-AAE1-06C5BA1C4928}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09686750-DDF8-4B7B-AAE1-06C5BA1C4928}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09686750-DDF8-4B7B-AAE1-06C5BA1C4928}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E8C9535-856A-4149-966F-2987B10F97E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E8C9535-856A-4149-966F-2987B10F97E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E8C9535-856A-4149-966F-2987B10F97E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E8C9535-856A-4149-966F-2987B10F97E2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
