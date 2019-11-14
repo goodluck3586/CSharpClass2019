@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C55809B2-CFF1-4C35-AE17-3AE0AC01C699}</ProjectGuid>
+    <ProjectGuid>{B11B4FF7-DA87-4759-B009-DDAECDC9C8ED}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>WinFormDB01</RootNamespace>
-    <AssemblyName>WinFormDB01</AssemblyName>
+    <RootNamespace>WinFormDB03_CRUD</RootNamespace>
+    <AssemblyName>WinFormDB03_CRUD</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

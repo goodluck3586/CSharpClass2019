@@ -19,43 +19,35 @@ namespace WinFormDB01
         }
 
         MySqlConnection conn;
+
         private void Form1_Load(object sender, EventArgs e)
         {
-            // 1. MySql 연결 설정
-            string connectionString = "server=localhost;port=3306;username=root;password=1111";
-            conn = new MySqlConnection(connectionString);
-
             try
             {
-                // 2. DB Open
+                string connectionStr = "server=localhost;port=3306;username=root;password=1111";
+                conn = new MySqlConnection(connectionStr);
+
                 conn.Open();
-                ShowDBConnectionState();
+                ShowConnectionState();
             }
             catch (Exception ex)
             {
+
                 MessageBox.Show(ex.Message);
             }
+            
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnClose_Click(object sender, EventArgs e)
         {
             if (conn.State == ConnectionState.Open)
             {
                 conn.Close();
-                ShowDBConnectionState();
+                ShowConnectionState();
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            if (conn.State == ConnectionState.Closed)
-            {
-                conn.Open();
-                ShowDBConnectionState();
-            }
-        }
-
-        private void ShowDBConnectionState()
+        private void ShowConnectionState()
         {
             if (conn.State == ConnectionState.Open)
             {
@@ -69,6 +61,13 @@ namespace WinFormDB01
             }
         }
 
-        
+        private void btnOpen_Click(object sender, EventArgs e)
+        {
+            if (conn.State == ConnectionState.Closed)
+            {
+                conn.Open();
+                ShowConnectionState();
+            }
+        }
     }
 }
