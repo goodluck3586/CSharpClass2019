@@ -25,8 +25,12 @@ namespace WinFormDB07_DataSet
         {
             string connStr = "server=localhost;port=3306;database=world;uid=root;pwd=1111";
             conn = new MySqlConnection(connStr);
-            adapter = new MySqlDataAdapter();  // DataSet과 DB 연결(명령 수행)
+            adapter = new MySqlDataAdapter("SELECT * FROM city", conn);  // DataSet과 DB 연결(명령 수행)
             dataSet = new DataSet();           // 메모리상의 가상 DataTable 관리
+
+            adapter.Fill(dataSet, "city");
+            dataGridView1.DataSource = dataSet.Tables["city"];
+
         }
 
         private void btnSelect_Click(object sender, EventArgs e)
@@ -58,6 +62,10 @@ namespace WinFormDB07_DataSet
 
         private void btnInsert_Click(object sender, EventArgs e)
         {
+            //dataSet.Clear();
+            //string queryString = "SELECT * FROM city";
+            //adapter.SelectCommand = new MySqlCommand(queryString, conn);
+
             string sql = "INSERT INTO city (name, countrycode, district, population) " +
                 "VALUES(@name, @countrycode, @district, @population)";
 

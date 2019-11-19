@@ -1,4 +1,4 @@
-﻿namespace WinFormDB06_DataTable_SIUD
+﻿namespace WinFormDB06_DataTable
 {
     partial class Form1
     {
@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.textBoxName = new System.Windows.Forms.TextBox();
             this.textBoxAge = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.rbFemale = new System.Windows.Forms.RadioButton();
             this.rbMale = new System.Windows.Forms.RadioButton();
+            this.rbFemale = new System.Windows.Forms.RadioButton();
             this.btnInsert = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
@@ -47,134 +47,123 @@
             // 
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(14, 14);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dataGridView1.Location = new System.Drawing.Point(31, 12);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 27;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(460, 166);
+            this.dataGridView1.Size = new System.Drawing.Size(504, 208);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(500, 33);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(41, 12);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "이름 : ";
-            // 
-            // textBoxName
-            // 
-            this.textBoxName.Location = new System.Drawing.Point(562, 30);
-            this.textBoxName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBoxName.Name = "textBoxName";
-            this.textBoxName.Size = new System.Drawing.Size(128, 21);
-            this.textBoxName.TabIndex = 2;
-            // 
-            // textBoxAge
-            // 
-            this.textBoxAge.Location = new System.Drawing.Point(562, 67);
-            this.textBoxAge.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBoxAge.Name = "textBoxAge";
-            this.textBoxAge.Size = new System.Drawing.Size(119, 21);
-            this.textBoxAge.TabIndex = 4;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(500, 70);
+            this.label2.Location = new System.Drawing.Point(557, 40);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(41, 12);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "나이 : ";
+            this.label2.Size = new System.Drawing.Size(65, 19);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "이름 : ";
+            // 
+            // textBoxName
+            // 
+            this.textBoxName.Location = new System.Drawing.Point(624, 37);
+            this.textBoxName.Name = "textBoxName";
+            this.textBoxName.Size = new System.Drawing.Size(142, 25);
+            this.textBoxName.TabIndex = 3;
+            // 
+            // textBoxAge
+            // 
+            this.textBoxAge.Location = new System.Drawing.Point(624, 81);
+            this.textBoxAge.Name = "textBoxAge";
+            this.textBoxAge.Size = new System.Drawing.Size(142, 25);
+            this.textBoxAge.TabIndex = 5;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(557, 84);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(65, 19);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "나이 : ";
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.rbFemale);
             this.groupBox1.Controls.Add(this.rbMale);
-            this.groupBox1.Location = new System.Drawing.Point(502, 111);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox1.Location = new System.Drawing.Point(554, 130);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(146, 69);
-            this.groupBox1.TabIndex = 5;
+            this.groupBox1.Size = new System.Drawing.Size(212, 63);
+            this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "성별";
-            // 
-            // rbFemale
-            // 
-            this.rbFemale.AutoSize = true;
-            this.rbFemale.Location = new System.Drawing.Point(77, 25);
-            this.rbFemale.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.rbFemale.Name = "rbFemale";
-            this.rbFemale.Size = new System.Drawing.Size(47, 16);
-            this.rbFemale.TabIndex = 1;
-            this.rbFemale.TabStop = true;
-            this.rbFemale.Text = "여성";
-            this.rbFemale.UseVisualStyleBackColor = true;
             // 
             // rbMale
             // 
             this.rbMale.AutoSize = true;
-            this.rbMale.Location = new System.Drawing.Point(21, 25);
-            this.rbMale.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rbMale.Location = new System.Drawing.Point(37, 24);
             this.rbMale.Name = "rbMale";
-            this.rbMale.Size = new System.Drawing.Size(47, 16);
+            this.rbMale.Size = new System.Drawing.Size(58, 19);
             this.rbMale.TabIndex = 0;
             this.rbMale.TabStop = true;
             this.rbMale.Text = "남성";
             this.rbMale.UseVisualStyleBackColor = true;
             // 
+            // rbFemale
+            // 
+            this.rbFemale.AutoSize = true;
+            this.rbFemale.Location = new System.Drawing.Point(117, 24);
+            this.rbFemale.Name = "rbFemale";
+            this.rbFemale.Size = new System.Drawing.Size(58, 19);
+            this.rbFemale.TabIndex = 1;
+            this.rbFemale.TabStop = true;
+            this.rbFemale.Text = "여성";
+            this.rbFemale.UseVisualStyleBackColor = true;
+            // 
             // btnInsert
             // 
-            this.btnInsert.Location = new System.Drawing.Point(14, 197);
-            this.btnInsert.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnInsert.Location = new System.Drawing.Point(31, 247);
             this.btnInsert.Name = "btnInsert";
-            this.btnInsert.Size = new System.Drawing.Size(145, 31);
-            this.btnInsert.TabIndex = 6;
+            this.btnInsert.Size = new System.Drawing.Size(141, 40);
+            this.btnInsert.TabIndex = 7;
             this.btnInsert.Text = "입력";
             this.btnInsert.UseVisualStyleBackColor = true;
             this.btnInsert.Click += new System.EventHandler(this.btnInsert_Click);
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(176, 197);
-            this.btnUpdate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnUpdate.Location = new System.Drawing.Point(199, 247);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(145, 31);
-            this.btnUpdate.TabIndex = 7;
+            this.btnUpdate.Size = new System.Drawing.Size(141, 40);
+            this.btnUpdate.TabIndex = 8;
             this.btnUpdate.Text = "수정";
             this.btnUpdate.UseVisualStyleBackColor = true;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(334, 197);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnDelete.Location = new System.Drawing.Point(376, 247);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(145, 31);
-            this.btnDelete.TabIndex = 8;
+            this.btnDelete.Size = new System.Drawing.Size(141, 40);
+            this.btnDelete.TabIndex = 9;
             this.btnDelete.Text = "삭제";
             this.btnDelete.UseVisualStyleBackColor = true;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(700, 240);
+            this.ClientSize = new System.Drawing.Size(800, 303);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnInsert);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.textBoxAge);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.textBoxName);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.dataGridView1);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -189,10 +178,10 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBoxName;
         private System.Windows.Forms.TextBox textBoxAge;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.RadioButton rbFemale;
         private System.Windows.Forms.RadioButton rbMale;

@@ -87,6 +87,9 @@ namespace WinFormDB06_DataTable_SIUD
             int selectedIndex = dataGridView1.SelectedRows[0].Index;
             DataRow row = dataTable.Rows[selectedIndex];
             row.Delete();
+
+            //DataGridViewRow Row = dataGridView1.SelectedRows[0];
+            //dataGridView1.Rows.Remove(Row);
         }
     }
 }
