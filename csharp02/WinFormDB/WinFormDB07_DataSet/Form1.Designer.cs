@@ -45,9 +45,17 @@
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
+            this.tabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -63,6 +71,7 @@
             this.panel1.Controls.Add(this.textBoxId);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(30, 30);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(425, 209);
             this.panel1.TabIndex = 0;
@@ -70,6 +79,7 @@
             // textBoxPopulation
             // 
             this.textBoxPopulation.Location = new System.Drawing.Point(127, 170);
+            this.textBoxPopulation.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxPopulation.Name = "textBoxPopulation";
             this.textBoxPopulation.Size = new System.Drawing.Size(273, 25);
             this.textBoxPopulation.TabIndex = 9;
@@ -77,7 +87,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(41, 173);
+            this.label5.Location = new System.Drawing.Point(41, 172);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(77, 15);
             this.label5.TabIndex = 8;
@@ -86,6 +96,7 @@
             // textBoxCountryCode
             // 
             this.textBoxCountryCode.Location = new System.Drawing.Point(127, 108);
+            this.textBoxCountryCode.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxCountryCode.Name = "textBoxCountryCode";
             this.textBoxCountryCode.Size = new System.Drawing.Size(273, 25);
             this.textBoxCountryCode.TabIndex = 7;
@@ -102,6 +113,7 @@
             // textBoxDistrict
             // 
             this.textBoxDistrict.Location = new System.Drawing.Point(127, 139);
+            this.textBoxDistrict.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxDistrict.Name = "textBoxDistrict";
             this.textBoxDistrict.Size = new System.Drawing.Size(273, 25);
             this.textBoxDistrict.TabIndex = 5;
@@ -117,7 +129,8 @@
             // 
             // textBoxName
             // 
-            this.textBoxName.Location = new System.Drawing.Point(127, 77);
+            this.textBoxName.Location = new System.Drawing.Point(127, 78);
+            this.textBoxName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.Size = new System.Drawing.Size(273, 25);
             this.textBoxName.TabIndex = 3;
@@ -134,6 +147,7 @@
             // textBoxId
             // 
             this.textBoxId.Location = new System.Drawing.Point(127, 46);
+            this.textBoxId.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxId.Name = "textBoxId";
             this.textBoxId.Size = new System.Drawing.Size(273, 25);
             this.textBoxId.TabIndex = 1;
@@ -150,8 +164,9 @@
             // btnSelect
             // 
             this.btnSelect.Location = new System.Drawing.Point(485, 49);
+            this.btnSelect.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSelect.Name = "btnSelect";
-            this.btnSelect.Size = new System.Drawing.Size(264, 33);
+            this.btnSelect.Size = new System.Drawing.Size(264, 32);
             this.btnSelect.TabIndex = 1;
             this.btnSelect.Text = "SELECT";
             this.btnSelect.UseVisualStyleBackColor = true;
@@ -160,8 +175,9 @@
             // btnInsert
             // 
             this.btnInsert.Location = new System.Drawing.Point(485, 89);
+            this.btnInsert.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnInsert.Name = "btnInsert";
-            this.btnInsert.Size = new System.Drawing.Size(264, 33);
+            this.btnInsert.Size = new System.Drawing.Size(264, 32);
             this.btnInsert.TabIndex = 2;
             this.btnInsert.Text = "INSERT";
             this.btnInsert.UseVisualStyleBackColor = true;
@@ -170,8 +186,9 @@
             // btnUpdate
             // 
             this.btnUpdate.Location = new System.Drawing.Point(485, 128);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(264, 33);
+            this.btnUpdate.Size = new System.Drawing.Size(264, 32);
             this.btnUpdate.TabIndex = 3;
             this.btnUpdate.Text = "UPDATE";
             this.btnUpdate.UseVisualStyleBackColor = true;
@@ -179,18 +196,21 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(485, 167);
+            this.btnDelete.Location = new System.Drawing.Point(485, 168);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(264, 33);
+            this.btnDelete.Size = new System.Drawing.Size(264, 32);
             this.btnDelete.TabIndex = 4;
             this.btnDelete.Text = "DELETE";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnClear
             // 
             this.btnClear.Location = new System.Drawing.Point(485, 206);
+            this.btnClear.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(264, 33);
+            this.btnClear.Size = new System.Drawing.Size(264, 32);
             this.btnClear.TabIndex = 5;
             this.btnClear.Text = "텍스트박스 지우기";
             this.btnClear.UseVisualStyleBackColor = true;
@@ -205,23 +225,66 @@
             this.label7.TabIndex = 7;
             this.label7.Text = "WORLD.CITY";
             // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Location = new System.Drawing.Point(30, 258);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(744, 430);
+            this.tabControl1.TabIndex = 8;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.dataGridView1);
+            this.tabPage1.Location = new System.Drawing.Point(4, 25);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(736, 401);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "City";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.dataGridView2);
+            this.tabPage2.Location = new System.Drawing.Point(4, 25);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(736, 401);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Country";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
             // dataGridView1
             // 
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(30, 255);
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(3, 3);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 27;
-            this.dataGridView1.Size = new System.Drawing.Size(719, 415);
-            this.dataGridView1.TabIndex = 8;
+            this.dataGridView1.Size = new System.Drawing.Size(730, 395);
+            this.dataGridView1.TabIndex = 0;
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView2.Location = new System.Drawing.Point(3, 3);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.RowHeadersWidth = 51;
+            this.dataGridView2.RowTemplate.Height = 27;
+            this.dataGridView2.Size = new System.Drawing.Size(730, 395);
+            this.dataGridView2.TabIndex = 0;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 682);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnDelete);
@@ -229,12 +292,17 @@
             this.Controls.Add(this.btnInsert);
             this.Controls.Add(this.btnSelect);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.tabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -259,7 +327,11 @@
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.DataGridView dataGridView2;
     }
 }
 

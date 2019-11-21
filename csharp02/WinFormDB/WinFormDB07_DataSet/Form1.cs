@@ -30,6 +30,10 @@ namespace WinFormDB07_DataSet
 
             dataAdapter.Fill(dataSet, "city");
             dataGridView1.DataSource = dataSet.Tables["city"];
+
+            dataAdapter = new MySqlDataAdapter("SELECT * FROM country", conn);
+            dataAdapter.Fill(dataSet, "country");
+            dataGridView2.DataSource = dataSet.Tables["country"];
         }
 
         private void btnSelect_Click(object sender, EventArgs e)
@@ -132,37 +136,114 @@ namespace WinFormDB07_DataSet
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            //string sql = "UPDATE city SET name=@name, countrycode=@countrycode, district=@district, " +
-            //    "population=@population WHERE countrycode=@countrycode";
-            string sql = "UPDATE city SET district=@district WHERE countrycode=@countrycode";
+            
+            string sql = "UPDATE city SET name=@name, district=@district, " +
+                "population=@population WHERE id=@id";
             dataAdapter.UpdateCommand = new MySqlCommand(sql, conn);
-            dataAdapter.UpdateCommand.Parameters.AddWithValue("@id", textBoxId.Text);
+            dataAdapter.UpdateCommand.Parameters.AddWithValue("@id", (int)dataGridView1.SelectedRows[0].Cells["id"].Value);
             dataAdapter.UpdateCommand.Parameters.AddWithValue("@name", textBoxName.Text);
             dataAdapter.UpdateCommand.Parameters.AddWithValue("@countrycode", textBoxCountryCode.Text);
             dataAdapter.UpdateCommand.Parameters.AddWithValue("@district", textBoxDistrict.Text);
             dataAdapter.UpdateCommand.Parameters.AddWithValue("@population", textBoxPopulation.Text);
 
+            #region UpdateCommand를 이용한 처리
+            //try
+            //{
+            //    conn.Open();
+
+            //    if (dataAdapter.UpdateCommand.ExecuteNonQuery() > 0)  // 검색된 데이터의 행 수 반환
+            //    {
+            //        dataSet.Clear();
+            //        dataAdapter.Fill(dataSet, "city");
+            //        dataGridView1.DataSource = dataSet.Tables["city"];
+            //    }
+            //    else
+            //        MessageBox.Show("수정된 데이터가 없습니다.");
+            //}
+            //catch (Exception ex)
+            //{
+            //    MessageBox.Show(ex.Message);
+            //}
+            //finally
+            //{
+            //    conn.Close();
+            //}
+            #endregion
+
+            #region Update를 이용한 처리 (메모리에서 먼저 수정하고 DB로 Update)
+            int id = (int)dataGridView1.SelectedRows[0].Cells["id"].Value;
+            string filter = "id=" + id;
+            DataRow[] findRows = dataSet.Tables["city"].Select(filter);
+            findRows[0]["id"] = id;
+            findRows[0]["name"] = textBoxName.Text;
+            findRows[0]["countrycode"] = textBoxCountryCode.Text;
+            findRows[0]["district"] = textBoxDistrict.Text;
+            findRows[0]["population"] = textBoxPopulation.Text;
+
+            //// 선택된 여러 줄을 수정함.
+            //int id;
+            //string filter;
+            //for (int i = 0; i < dataGridView1.SelectedRows.Count; i++)
+            //{
+            //    id = (int)dataGridView1.SelectedRows[i].Cells["id"].Value;
+            //    filter = "id=" + id;
+            //    DataRow[] findRows = dataSet.Tables["city"].Select(filter);
+            //    findRows[0]["id"] = id;
+            //    findRows[0]["name"] = textBoxName.Text;
+            //    findRows[0]["countrycode"] = textBoxCountryCode.Text;
+            //    findRows[0]["district"] = textBoxDistrict.Text;
+            //    findRows[0]["population"] = textBoxPopulation.Text;
+            //}
+
             try
             {
-                conn.Open();
-
-                if (dataAdapter.UpdateCommand.ExecuteNonQuery() > 0)  // 검색된 데이터의 행 수 반환
-                {
-                    dataSet.Clear();
-                    dataAdapter.Fill(dataSet, "city");
-                    dataGridView1.DataSource = dataSet.Tables["city"];
-                }
-                else
-                    MessageBox.Show("수정된 데이터가 없습니다.");
+                dataAdapter.Update(dataSet, "city");
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
-            finally
-            {
-                conn.Close();
-            }
+            
+            #endregion
+
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            int id;
+            string sql = "DELETE FROM city WHERE id=@id";
+            dataAdapter.DeleteCommand = new MySqlCommand(sql, conn);
+            dataAdapter.DeleteCommand.Parameters.Add("@id", MySqlDbType.Int32);
+            id = (int)dataGridView1.SelectedRows[0].Cells["id"].Value; // dataGridView1에서 선택된 행(row) 정보 가져오기
+            dataAdapter.DeleteCommand.Parameters["@id"].Value = id;
+
+            #region DeleteCommand를 이용한 처리
+            //try
+            //{
+            //    conn.Open();
+            //    dataAdapter.DeleteCommand.ExecuteNonQuery();
+
+            //    dataSet.Clear();
+            //    dataAdapter.Fill(dataSet, "city");
+            //    dataGridView1.DataSource = dataSet.Tables["city"];
+            //}
+            //catch (Exception ex)
+            //{
+            //    MessageBox.Show(ex.Message);
+            //}
+            //finally
+            //{
+            //    conn.Close();
+            //}
+            #endregion
+
+            #region DataSet을 먼저 수정하고 Update()하여 DB에 반영
+            // 선택된 행의 id를 이용하여 dataSet에서 행 선택하기
+            DataRow[] findRows = dataSet.Tables["city"].Select($"id={id}");
+            findRows[0].Delete();  // 선택된 행 삭제
+
+            dataAdapter.Update(dataSet, "city");
+            #endregion
         }
     }
 }
