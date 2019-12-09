@@ -23,6 +23,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormDB06_DataTable", "Wi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormDB07_DataSet", "WinFormDB07_DataSet\WinFormDB07_DataSet.csproj", "{8AAAB36A-431E-40E5-9FF2-A43207A14F45}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormDB_Excel", "WinFormDB_Excel\WinFormDB_Excel.csproj", "{A8EB099C-84E1-4A57-B449-66FFD24E85DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{C90AB84D-CB3B-4099-BD48-89ABD7225E56}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +73,14 @@ Global
 		{8AAAB36A-431E-40E5-9FF2-A43207A14F45}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8AAAB36A-431E-40E5-9FF2-A43207A14F45}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8AAAB36A-431E-40E5-9FF2-A43207A14F45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8EB099C-84E1-4A57-B449-66FFD24E85DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8EB099C-84E1-4A57-B449-66FFD24E85DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8EB099C-84E1-4A57-B449-66FFD24E85DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8EB099C-84E1-4A57-B449-66FFD24E85DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C90AB84D-CB3B-4099-BD48-89ABD7225E56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C90AB84D-CB3B-4099-BD48-89ABD7225E56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C90AB84D-CB3B-4099-BD48-89ABD7225E56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C90AB84D-CB3B-4099-BD48-89ABD7225E56}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
